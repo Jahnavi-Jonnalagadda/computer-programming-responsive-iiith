@@ -544,6 +544,7 @@ window.view = {
 		document.getElementById('buttonEdit').className = 'button editButton'
 	},
 	deFreezeInputs: function () {
+		this.setEnvironment( 0, 0, 0, 0, 'arithmatic', 'a + b - c' )
 		this.enableElement('a')
 		this.enableElement('b')
 		this.enableElement('c')
