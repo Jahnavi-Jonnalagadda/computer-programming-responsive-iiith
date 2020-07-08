@@ -25,6 +25,8 @@ window.view = {
 			alert('Number of disks must be an integer value !')
 		 else if ( input > 5 || input % 1 !== 0 )
 			alert('Only integral value (Greater than equal to 1 and less than equal to 5) is accepted !')
+		 else if ( input < 0 || input > 10 )
+		 	alert('Invalid Input')
 		 else {
 			this.disableElement('btnOk')
 			this.enableElement('btnStart')
@@ -38,6 +40,7 @@ window.view = {
 				elements[i].className += ' ' + this.disks[i]
 		}
 	},
+	
 	changeClass: function(id, className) {
 		document.getElementById(id).className = className
 	},
